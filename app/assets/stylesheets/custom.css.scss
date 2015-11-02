@@ -1,2 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+.logos {
+    height: 22px;
+    opacity: 0.5;
+}
+
+.logos:hover {
+  opacity: 1.0;
+}
