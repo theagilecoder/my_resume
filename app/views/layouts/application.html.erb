@@ -13,7 +13,6 @@
     <div class="container" id="main">
 
       <div class="navbar navbar-fixed-top navbar-default">
-              
         <div class="container">
                
           <a class="navbar-brand" href="#"><%= image_tag("logo.png", alt: "My Logo") %></a>
@@ -24,17 +23,42 @@
             </ul><!-- end nav left -->
                    
             <ul class="nav navbar-nav pull-right">
-              <li class="logos"><a href="#" data-original-title="theagilecoder@gmail.com" rel="tooltip" data-placement="bottom"><%= image_tag("email24.png", alt: "Email") %></a></li>
+              <li class="logos"><a href="#" data-original-title="theagilecoder@gmail.com" rel="tooltip" data-placement="left"><%= image_tag("email24.png", alt: "Email") %></a></li>
               <li class="logos"><a href="#" data-original-title="91-9952000475" rel="tooltip" data-placement="bottom"><%= image_tag("phone24.png", alt: "Phone") %></a></li>
               <li class="logos"><a href="https://in.linkedin.com/in/pushkarsingh1" target=“_blank”><%= image_tag("linkedin24.png", alt: "LinkedIn") %></a></li>
               <li class="logos"><a href="https://github.com/theagilecoder" target=“_blank”><%= image_tag("github24.png", alt: "Github") %></a></li>
             </ul><!-- end nav right -->
                    
         </div><!-- end navbar container -->
-               
       </div><!-- end navbar -->
-	       
-    </div><!-- end main container -->
       
+      <%= yield %>
+	       
+    </div><!-- end main container (excludes the footer) -->
+    
+    <hr>
+        
+    <footer>
+      <div class="container">
+        <div class="row">
+                    
+          <div class="col-sm-4" id="div1">
+            <h6>Copyright &copy; 2015 Pushkar Singh</h6>
+          </div><!-- end col-sm-4 -->
+                    
+          <div class="col-sm-4" id="div2">
+            <h6>About</h6>
+            <p>This webpage has been constructed to serve as personal landing page / resume to whomsover it concerns. Bootstrap 3 has been used to contruct the front end; which has been integrated with Rails 4. This page is being hosted by Heroku.</p>
+          </div><!-- end col-sm-4 -->
+                    
+          <div class="col-sm-4" id="div3">
+            <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by theagilecoder</h6>
+            <h6><a href="https://github.com/theagilecoder/my_resume" target="_blank">Source Code</a> hosted by Github&trade;</h6>
+          </div><!-- end col-sm-4 -->
+                    
+        </div><!-- end row -->
+      </div><!-- end container -->	           
+    </footer><!-- end footer -->	
+          
   </body>
 </html>

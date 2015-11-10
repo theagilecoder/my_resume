@@ -1,13 +1,43 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<div class="carousel slide" id="myCarousel">
+	         
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+	  <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+	  <li data-slide-to="1" data-target="#myCarousel"></li>
+	  <li data-slide-to="2" data-target="#myCarousel"></li>
+	 </ol>
 
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
-</div>
-
-<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+		
+		<div class="item active" id="slide1">
+      <%= image_tag("carousel_large_01.jpg") %>
+			<div class="carousel-caption">
+				<h4>Hi! I'm Pushkar</h4>
+				<p>I am a Business Analyst in the consulting arm for a major MNC -  primarily working in the supply chain domain for Retail and Consumer Goods companies</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+		
+		<div class="item" id="slide2">
+      <%= image_tag("carousel_flipped_01.jpg") %>
+			<div class="carousel-caption">
+				<h4>Lets build things together</h4>
+				<p>I am a passionate web architect on the cloud and specialize in making highly scalable Database backed Web Applications</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+		
+		<div class="item" id="slide3">
+      <%= image_tag("carousel_large_01.jpg") %>
+			<div class="carousel-caption">
+				<h4>Get in touch!</h4>
+				<p>Drop me a note on theagilecoder@gmail.com or give me a call on <br> 91-9952000475</p>
+			</div><!-- end carousel-caption-->
+		</div><!-- end item -->
+	
+	</div><!-- carousel-inner -->
+	
+	<!-- Controls -->
+	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+	
+</div><!-- end myCarousel -->

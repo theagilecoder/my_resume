@@ -4,12 +4,38 @@
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-
 .logos {
     height: 22px;
     opacity: 0.5;
 }
 
-.logos:hover {
-  opacity: 1.0;
+.logos:hover { opacity: 1.0; }
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 10px;
+    padding: 5px;
+}    
+
+footer #div1 {}
+footer #div2 { text-align: justify; }
+footer #div3 { text-align: right; }
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel { margin-top: 60px; }
+.carousel-caption { font-size: 20px; }
+.carousel-caption h4 { font-size: 32px; }
