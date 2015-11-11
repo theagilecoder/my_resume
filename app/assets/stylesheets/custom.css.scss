@@ -12,7 +12,7 @@
 .logos:hover { opacity: 1.0; }
 
 /* --------------------------------------
-   Layout
+   Footer
    -------------------------------------- */
 footer {
     background: #333;
@@ -41,10 +41,12 @@ body {
 .carousel-caption h4 { font-size: 32px; }
 
 /* --------------------------------------
-   Global Styles
+   Well
    -------------------------------------- */
 .well .page-header { margin-top: 0; }
 
-.well .page-header h3{ margin-top: 0; margin-bottom:0; }
+.well .page-header h3{ margin-top: 0; margin-bottom: 0; }
 
-.well {	margin: 20px 0; }
+.well {	margin-top: 40px;}
+
+#myWell { width: 100%; margin: 0 auto; }
